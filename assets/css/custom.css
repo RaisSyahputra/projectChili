@@ -1,0 +1,41 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bs-gray-100);
+}
+
+.bottom-nav {
+  backdrop-filter: saturate(200%) blur(30px);
+  -webkit-backdrop-filter: saturate(200%) blur(30px);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .bottom-nav {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .bottom-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-gray-600);
+    font-size: 0.8rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .bottom-nav .nav-link:hover,
+  .bottom-nav .nav-link.active {
+    color: var(--bs-primary);
+  }
+
+  .bottom-nav .nav-link i {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+}

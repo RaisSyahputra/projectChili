@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Deteksi Cabai</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800" rel="stylesheet" />
+  <link id="pagestyle" href="./assets/css/soft-design-system.min.css" rel="stylesheet" />
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Navbar -->
+<div class="container position-sticky z-index-sticky top-0">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+        <div class="container-fluid px-0">
+          <!-- Logo / Navbar Brand -->
+          <a class="navbar-brand font-weight-bolder ms-sm-3" href="index.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+            Deteksi Cabai
+          </a>
+          
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+            <ul class="navbar-nav navbar-nav-hover ms-auto pe-lg-5 w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center mx-3" href="index.html">
+                  Beranda
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center mx-3" href="deteksi.html">
+                  Deteksi
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center mx-3" href="berita.html">
+                  Berita
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- End Navbar -->
+
+<main class="mt-7">
+  <section class="py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-blur border-0">
+            <div class="card-body">
+              <h4 class="mb-3">Deteksi Gambar</h4>
+              <p class="text-sm text-secondary">Upload foto dari file atau gunakan kamera perangkat Anda.</p>
+              <div class="mb-3">
+                <label class="form-label">Upload dari File</label>
+                <input id="fileInput" class="form-control" type="file" accept="image/*">
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <button id="btnOpenCamera" class="btn btn-primary mb-2" type="button">
+                  <i class="fa fa-camera me-2"></i>Gunakan Kamera
+                </button>
+                <button id="btnDeteksi" class="btn btn-success mb-2" type="button" disabled>Deteksi</button>
+              </div>
+              <div id="cameraWrap" class="border border-2 border-dashed border-secondary-subtle rounded-3 p-3 d-none">
+                <video id="video" class="w-100 border-radius-lg" autoplay playsinline></video>
+                <div class="mt-2 d-flex gap-2">
+                  <button id="btnCapture" class="btn btn-dark" type="button">
+                    <i class="fa fa-image me-2"></i>Ambil Foto
+                  </button>
+                  <button id="btnCloseCamera" class="btn btn-secondary" type="button">Tutup Kamera</button>
+                </div>
+              </div>
+              <img id="preview" class="img-fluid border-radius-lg mt-3 d-none" alt="Preview">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Bottom Navbar -->
+<nav class="navbar navbar-expand d-md-none bottom-nav fixed-bottom py-2">
+  <ul class="navbar-nav nav-justified w-100">
+    <li class="nav-item text-center">
+      <a class="nav-link" href="index.html">
+        <i class="fa fa-store"></i>
+      </a>
+    </li>
+    <li class="nav-item text-center">
+      <a class="nav-link" href="deteksi.html">
+        <i class="fa fa-camera"></i>
+      </a>
+    </li>
+    <li class="nav-item text-center">
+      <a class="nav-link" href="berita.html">
+        <i class="fa fa-newspaper"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+<script src="./assets/js/soft-design-system.min.js"></script>
+<script src="./assets/js/deteksi.js"></script>
+</body>
+</html>
