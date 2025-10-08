@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Deteksi Cabai — Selamat Datang</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800" rel="stylesheet" />
+  <link id="pagestyle" href="./assets/css/soft-design-system.min.css" rel="stylesheet" />
+  <style>
+    .onboard-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center}
+    .card-onboard{max-width:900px;width:100%}
+    .carousel-item img{max-height:320px;object-fit:cover;border-radius:12px}
+  </style>
+</head>
+<body>
+  <main class="onboard-wrap">
+    <div class="container">
+      <div class="card card-onboard shadow-blur mx-auto">
+        <div class="card-body p-4">
+          <h4 class="mb-2">Selamat Datang di Deteksi Cabai</h4>
+          <p class="text-sm text-secondary">Aplikasi ini membantu Anda mendeteksi penyakit tanaman cabai melalui foto.</p>
+
+          <div id="onboardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-3 align-items-center">
+                  <div class="col-md-6">
+                    <img src="./assets/img/curved-images/curved.jpg" class="d-block w-100" alt="Deteksi cepat">
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Deteksi Cepat</h5>
+                    <p class="text-secondary">Unggah foto atau gunakan kamera perangkat untuk mendeteksi penyakit pada daun cabai.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-3 align-items-center">
+                  <div class="col-md-6 order-md-2">
+                    <img src="./assets/img/curved-images/curved6.jpg" class="d-block w-100" alt="Panduan perawatan">
+                  </div>
+                  <div class="col-md-6 order-md-1">
+                    <h5>Rekomendasi Perawatan</h5>
+                    <p class="text-secondary">Setelah deteksi, aplikasi menyediakan deskripsi dan tindakan pencegahan untuk setiap penyakit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-3 align-items-center">
+                  <div class="col-md-6">
+                    <img src="./assets/img/curved-images/curved11.jpg" class="d-block w-100" alt="Komunitas & berita">
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Berita & Tips</h5>
+                    <p class="text-secondary">Dapatkan berita dan tips terbaru seputar pertanian dan perawatan cabai pada halaman Berita.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#onboardCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#onboardCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <a href="splash.html" class="btn btn-link text-secondary">Kembali</a>
+            <a href="index.html" class="btn btn-primary">Mulai</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+</body>
+</html>
